@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Minecraft Wiki - Official Style</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+  <div class="nav-logo">Minecraft Wiki</div>
+  
+  <div class="nav-links">
+    <a href="#hero" class="tr" data-ko="HOME" data-en="HOME">HOME</a>
+    <a href="#home" class="tr" data-ko="소개" data-en="About">소개</a>
+    <a href="#items" class="tr" data-ko="아이템" data-en="Items">아이템</a>
+    <a href="#mobs" class="tr" data-ko="몹" data-en="Mobs">몹</a>
+    <a href="#tips" class="tr" data-ko="팁" data-en="Tips">팁</a>
+  </div>
+
+  <div class="nav-lang-container">
+    <button class="lang-btn" onclick="toggleLangMenu()">🌐 Language</button>
+    <div class="lang-dropdown" id="langMenu">
+      <button onclick="setLanguage('ko')">한국어</button>
+      <button onclick="setLanguage('en')">English</button>
+    </div>
+  </div>
+</nav>
+
+<div id="hero" class="big-section">
+  <h1>MINECRAFT WIKI</h1>
+  <p class="content-text tr" data-ko="무한한 창의력의 세계에 오신 것을 환영합니다." data-en="Welcome to a world of endless creativity." style="margin-top: 20px; text-shadow: 2px 2px #000;">무한한 창의력의 세계에 오신 것을 환영합니다.</p>
+</div>
+
+<section id="home" class="big-section">
+  <h2 class="section-title tr" data-ko="게임 소개" data-en="About the Game">게임 소개</h2>
+  <p class="content-text tr" data-ko="마인크래프트는 블록으로 이루어진 3D 세계에서 자원을 채집하고, 도구를 제작하며, 건축과 탐험을 즐길 수 있는 <b>샌드박스 게임</b>입니다. 플레이어는 정해진 목표 없이 자유롭게 자신만의 방식으로 게임을 진행할 수 있습니다." data-en="Minecraft is a <b>sandbox game</b> where you can gather resources, craft tools, build, and explore in a 3D world made of blocks. Players have no set goals and are free to play the game in their own unique way.">
+    마인크래프트는 블록으로 이루어진 3D 세계에서 자원을 채집하고, 도구를 제작하며, 건축과 탐험을 즐길 수 있는 <b>샌드박스 게임</b>입니다. 플레이어는 정해진 목표 없이 자유롭게 자신만의 방식으로 게임을 진행할 수 있습니다.
+  </p>
+
+  <h2 class="section-title tr" data-ko="게임 특징" data-en="Key Features" style="margin-top: 80px;">게임 특징</h2>
+  <div class="grid-container">
+    <div class="grid-item">
+      <h3 class="tr" data-ko="자유도 높은 플레이" data-en="High Freedom">자유도 높은 플레이</h3>
+      <p class="tr" data-ko="건축, 탐험, 농사, 전투 등 다양한 활동 가능" data-en="Enjoy any activity without restrictions, such as building, exploring, farming, and fighting.">건축, 탐험, 농사, 전투 등 다양한 활동 가능</p>
+    </div>
+    <div class="grid-item">
+      <h3 class="tr" data-ko="생존 시스템" data-en="Survival System">생존 시스템</h3>
+      <p class="tr" data-ko="체력과 배고픔을 관리하며 몹으로부터 살아남아야 함" data-en="Manage your health and hunger while defending yourself against mobs.">체력과 배고픔을 관리하며 몹으로부터 살아남아야 함</p>
+    </div>
+    <div class="grid-item">
+      <h3 class="tr" data-ko="무한한 월드" data-en="Infinite Worlds">무한한 월드</h3>
+      <p class="tr" data-ko="랜덤으로 생성되는 넓은 세계 탐험 가능" data-en="Experience a new adventure every time in procedurally generated worlds.">랜덤으로 생성되는 넓은 세계 탐험 가능</p>
+    </div>
+    <div class="grid-item">
+      <h3 class="tr" data-ko="멀티플레이" data-en="Multiplayer">멀티플레이</h3>
+      <p class="tr" data-ko="친구들과 협력하거나 경쟁 가능" data-en="Cooperate with friends or compete against each other.">친구들과 협력하거나 경쟁 가능</p>
+    </div>
+  </div>
+
+  <h2 class="section-title tr" data-ko="게임 모드" data-en="Game Modes" style="margin-top: 80px;">게임 모드</h2>
+  <div class="grid-container">
+    <div class="grid-item" style="border-left: 10px solid #f44336;">
+      <h3 class="tr" data-ko="서바이벌 모드" data-en="Survival Mode">서바이벌 모드</h3>
+      <p class="tr" data-ko="자원을 모으고 생존하는 기본 모드" data-en="The core mode where you manually gather resources and survive.">자원을 모으고 생존하는 기본 모드</p>
+    </div>
+    <div class="grid-item" style="border-left: 10px solid #2196f3;">
+      <h3 class="tr" data-ko="크리에이티브 모드" data-en="Creative Mode">크리에이티브 모드</h3>
+      <p class="tr" data-ko="모든 블록을 자유롭게 사용해 건축 가능" data-en="Fly and use infinite resources to focus entirely on building.">모든 블록을 자유롭게 사용해 건축 가능</p>
+    </div>
+    <div class="grid-item" style="border-left: 10px solid #ff9800;">
+      <h3 class="tr" data-ko="어드벤처 모드" data-en="Adventure Mode">어드벤처 모드</h3>
+      <p class="tr" data-ko="제작된 맵을 즐기는 모드" data-en="Explore custom maps and follow specific rules.">제작된 맵을 즐기는 모드</p>
+    </div>
+  </div>
+
+  <h2 class="section-title tr" data-ko="기본 진행 흐름" data-en="Basic Progression" style="margin-top: 80px;">기본 진행 흐름</h2>
+  <div class="flow-container">
+    <div class="flow-item">
+      <div class="flow-number">1️⃣</div>
+      <h3 class="tr" data-ko="기초 다지기" data-en="Laying Foundation">기초 다지기</h3>
+      <p class="tr" data-ko="나무를 캐고 기본 도구 제작" data-en="Punch trees to gather wood and craft basic tools">나무를 캐고 기본 도구 제작</p>
+    </div>
+    <div class="flow-item">
+      <div class="flow-number">2️⃣</div>
+      <h3 class="tr" data-ko="은신처 마련" data-en="Securing Shelter">은신처 마련</h3>
+      <p class="tr" data-ko="집을 지어 밤의 몹을 피함" data-en="Build a house to avoid mobs at night">집을 지어 밤의 몹을 피함</p>
+    </div>
+    <div class="flow-item">
+      <div class="flow-number">3️⃣</div>
+      <h3 class="tr" data-ko="심해 광질" data-en="Deep Mining">심해 광질</h3>
+      <p class="tr" data-ko="광질을 통해 철, 다이아 획득" data-en="Mine for iron and diamonds">광질을 통해 철, 다이아 획득</p>
+    </div>
+    <div class="flow-item">
+      <div class="flow-number">4️⃣</div>
+      <h3 class="tr" data-ko="차원 이동" data-en="Dimensional Travel">차원 이동</h3>
+      <p class="tr" data-ko="네더와 엔더 차원 탐험" data-en="Explore the Nether and End dimensions">네더와 엔더 차원 탐험</p>
+    </div>
+    <div class="flow-item">
+      <div class="flow-number">5️⃣</div>
+      <h3 class="tr" data-ko="최종 결전" data-en="Final Battle">최종 결전</h3>
+      <p class="tr" data-ko="최종 보스인 엔더 드래곤 처치" data-en="Defeat the Ender Dragon">최종 보스인 엔더 드래곤 처치</p>
+    </div>
+  </div>
+</section>
+
+<section id="items" class="big-section">
+  <h2 class="section-title tr" data-ko="아이템 도감" data-en="Item Encyclopedia">아이템 도감</h2>
+  <div id="itemContainer"></div>
+</section>
+
+<section id="mobs" class="big-section">
+  <h2 class="section-title tr" data-ko="몹 도감" data-en="Mob Encyclopedia">몹 도감</h2>
+  <div id="mobContainer"></div>
+</section>
+
+<section id="tips" class="big-section">
+  <h2 class="section-title tr" data-ko="팁 & 공략" data-en="Tips & Tricks">팁 & 공략</h2>
+  <ul class="content-text" style="list-style: none; padding: 0;">
+    <li class="tr" data-ko="✔ 첫날에는 반드시 나무를 캐고 집을 만들어야 한다." data-en="✔ Always gather wood and build a shelter on your first day.">✔ 첫날에는 반드시 나무를 캐고 집을 만들어야 한다.</li>
+    <li class="tr" data-ko="✔ 밤에는 몹이 나오므로 횃불을 설치하거나 실내에 있어야 한다." data-en="✔ Monsters spawn at night, so stay indoors or place torches.">✔ 밤에는 몹이 나오므로 횃불을 설치하거나 실내에 있어야 한다.</li>
+    <li class="tr" data-ko="✔ 철 장비를 빠르게 만드는 것이 생존에 중요하다." data-en="✔ Crafting iron gear quickly is essential for survival.">✔ 철 장비를 빠르게 만드는 것이 생존에 중요하다.</li>
+    <li class="tr" data-ko="✔ 다이아몬드는 깊은 지하에서 찾을 수 있다." data-en="✔ Diamonds are typically found deep underground.">✔ 다이아몬드는 깊은 지하에서 찾을 수 있다.</li>
+  </ul>
+</section>
+
+<div id="modal">
+  <div id="modalContentBox">
+    <span id="closeBtn" onclick="closeModal()">X</span>
+    <h2 id="modalTitle"></h2>
+    <p id="modalContent" style="white-space: pre-line;"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
