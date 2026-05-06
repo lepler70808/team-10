@@ -58,6 +58,9 @@ function setLanguage(lang) {
     el.innerHTML = el.getAttribute('data-' + lang);
   });
   
+  document.getElementById('itemSearchInput').placeholder = document.getElementById('itemSearchInput').getAttribute('data-' + lang);
+  document.getElementById('mobSearchInput').placeholder = document.getElementById('mobSearchInput').getAttribute('data-' + lang);
+
   renderItems();
   renderMobs();
   
@@ -87,9 +90,16 @@ function renderItems(){
   container.innerHTML = "";
 
   for(let key in itemData){
+    const cardTitle = currentLang === 'ko' ? itemData[key].koTitle : itemData[key].enTitle;
+    
+    const searchText = document.getElementById('itemSearchInput').value.toLowerCase();
+    if(searchText && !cardTitle.toLowerCase().includes(searchText)) {
+      continue;
+    }
+
     const div = document.createElement("div");
     div.className = "card";
-    div.innerText = currentLang === 'ko' ? itemData[key].koTitle : itemData[key].enTitle;
+    div.innerText = cardTitle;
     div.onclick = () => showItem(key);
     container.appendChild(div);
   }
@@ -100,12 +110,27 @@ function renderMobs(){
   container.innerHTML = "";
 
   for(let key in mobData){
+    const cardTitle = currentLang === 'ko' ? mobData[key].koTitle : mobData[key].enTitle;
+    
+    const searchText = document.getElementById('mobSearchInput').value.toLowerCase();
+    if(searchText && !cardTitle.toLowerCase().includes(searchText)) {
+      continue;
+    }
+
     const div = document.createElement("div");
     div.className = "card";
-    div.innerText = currentLang === 'ko' ? mobData[key].koTitle : mobData[key].enTitle;
+    div.innerText = cardTitle;
     div.onclick = () => showMob(key);
     container.appendChild(div);
   }
+}
+
+function searchItems() {
+  renderItems();
+}
+
+function searchMobs() {
+  renderMobs();
 }
 
 function showItem(key){
