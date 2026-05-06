@@ -33,6 +33,18 @@ nav {
   text-shadow: 3px 3px #000;
   font-weight: bold;
   user-select: none;
+  display: flex;
+  align-items: center;
+}
+
+.creeper-img {
+  width: 38px;
+  height: 38px;
+  margin-left: 10px;
+  border: 3px solid #000;
+  box-shadow: 3px 3px 0px rgba(0,0,0,0.3);
+  vertical-align: middle;
+  image-rendering: pixelated;
 }
 
 .nav-links {
@@ -118,7 +130,7 @@ nav a:hover {
 .big-section:nth-child(even) { background-color: #d7ccc8; }
 
 #hero {
-  background: url('https://i.namu.wiki/i/yHmjz_wOtyDaE-tdut3HsB-mR7wyecbPk0Hpa4EinGeE2nb3zHVNWA2Fc06vl7e-UNrxEut7-IAHTZJ1eiATtBc62iTuwdoR7d05_WKEiibXTDIsHZeab7yc9jk8nbJH0LsdbLsYgGGmrxdgza7jYQ.webp') no-repeat center 35%;
+  background: #388e3c no-repeat center 35%;
   background-size: cover;
   color: white;
   padding: 180px 10% 150px;

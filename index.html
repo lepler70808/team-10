@@ -9,7 +9,10 @@
 <body>
 
 <nav>
-  <div class="nav-logo">Minecraft Wiki</div>
+  <div class="nav-logo">
+    Minecraft Wiki
+    <img src="https://cdn.pixabay.com/photo/2016/11/11/17/03/creeper-1817227_1280.png" alt="Creeper" class="creeper-img">
+  </div>
   
   <div class="nav-links">
     <a href="#hero" class="tr" data-ko="HOME" data-en="HOME">HOME</a>
@@ -109,6 +112,9 @@
   <h2 class="section-title tr" data-ko="아이템 도감" data-en="Item Encyclopedia">아이템 도감</h2>
   <input type="text" id="itemSearchInput" oninput="searchItems()" class="search-input tr" data-ko="🔍 아이템 검색..." data-en="🔍 Search Items..." placeholder="🔍 아이템 검색...">
   <div id="itemContainer"></div>
+  <div style="text-align: center; margin-top: 30px;">
+    <button id="loadMoreBtn" class="lang-btn" onclick="loadMoreItems()" data-ko="더보기" data-en="Show More" style="display: none;">더보기</button>
+  </div>
 </section>
 
 <section id="mobs" class="big-section">

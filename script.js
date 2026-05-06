@@ -13,6 +13,35 @@ const itemData = {
   iron_sword: { koTitle: "철 검", enTitle: "Iron Sword", koDesc: "철 2 + 막대 1", enDesc: "2 Iron Ingots + 1 Stick" },
   diamond_sword: { koTitle: "다이아 검", enTitle: "Diamond Sword", koDesc: "다이아 2 + 막대 1", enDesc: "2 Diamonds + 1 Stick" },
   netherite_sword: { koTitle: "네더라이트 검", enTitle: "Netherite Sword", koDesc: "네더라이트 2 + 막대 1", enDesc: "2 Netherite Ingots + 1 Stick" },
+  
+  wood_shovel: { koTitle: "나무 삽", enTitle: "Wooden Shovel", koDesc: "판자 1 + 막대 2", enDesc: "1 Plank + 2 Sticks" },
+  stone_shovel: { koTitle: "돌 삽", enTitle: "Stone Shovel", koDesc: "조약돌 1 + 막대 2", enDesc: "1 Cobblestone + 2 Sticks" },
+  iron_shovel: { koTitle: "철 삽", enTitle: "Iron Shovel", koDesc: "철 1 + 막대 2", enDesc: "1 Iron Ingot + 2 Sticks" },
+  diamond_shovel: { koTitle: "다이아몬드 삽", enTitle: "Diamond Shovel", koDesc: "다이아 1 + 막대 2", enDesc: "1 Diamond + 2 Sticks" },
+  netherite_shovel: { koTitle: "네더라이트 삽", enTitle: "Netherite Shovel", koDesc: "네더라이트 1 + 막대 2", enDesc: "1 Netherite Ingot + 2 Sticks" },
+
+  wood_axe: { koTitle: "나무 도끼", enTitle: "Wooden Axe", koDesc: "판자 3 + 막대 2", enDesc: "3 Planks + 2 Sticks" },
+  stone_axe: { koTitle: "돌 도끼", enTitle: "Stone Axe", koDesc: "조약돌 3 + 막대 2", enDesc: "3 Cobblestone + 2 Sticks" },
+  iron_axe: { koTitle: "철 도끼", enTitle: "Iron Axe", koDesc: "철 3 + 막대 2", enDesc: "3 Iron Ingots + 2 Sticks" },
+  diamond_axe: { koTitle: "다이아몬드 도끼", enTitle: "Diamond Axe", koDesc: "다이아 3 + 막대 2", enDesc: "3 Diamonds + 2 Sticks" },
+  netherite_axe: { koTitle: "네더라이트 도끼", enTitle: "Netherite Axe", koDesc: "네더라이트 3 + 막대 2", enDesc: "3 Netherite Ingots + 2 Sticks" },
+
+  wood_hoe: { koTitle: "나무 괭이", enTitle: "Wooden Hoe", koDesc: "판자 2 + 막대 2", enDesc: "2 Planks + 2 Sticks" },
+  stone_hoe: { koTitle: "돌 괭이", enTitle: "Stone Hoe", koDesc: "조약돌 2 + 막대 2", enDesc: "2 Cobblestone + 2 Sticks" },
+  iron_hoe: { koTitle: "철 괭이", enTitle: "Iron Hoe", koDesc: "철 2 + 막대 2", enDesc: "2 Iron Ingots + 2 Sticks" },
+  diamond_hoe: { koTitle: "다이아몬드 괭이", enTitle: "Diamond Hoe", koDesc: "다이아 2 + 막대 2", enDesc: "2 Diamonds + 2 Sticks" },
+  netherite_hoe: { koTitle: "네더라이트 괭이", enTitle: "Netherite Hoe", koDesc: "네더라이트 2 + 막대 2", enDesc: "2 Netherite Ingots + 2 Sticks" },
+
+  iron_helmet: { koTitle: "철 투구", enTitle: "Iron Helmet", koDesc: "철 주괴 5개", enDesc: "5 Iron Ingots" },
+  iron_chestplate: { koTitle: "철 흉갑", enTitle: "Iron Chestplate", koDesc: "철 주괴 8개", enDesc: "8 Iron Ingots" },
+  iron_leggings: { koTitle: "철 레깅스", enTitle: "Iron Leggings", koDesc: "철 주괴 7개", enDesc: "7 Iron Ingots" },
+  iron_boots: { koTitle: "철 부츠", enTitle: "Iron Boots", koDesc: "철 주괴 4개", enDesc: "4 Iron Ingots" },
+
+  diamond_helmet: { koTitle: "다이아몬드 투구", enTitle: "Diamond Helmet", koDesc: "다이아몬드 5개", enDesc: "5 Diamonds" },
+  diamond_chestplate: { koTitle: "다이아몬드 흉갑", enTitle: "Diamond Chestplate", koDesc: "다이아몬드 8개", enDesc: "8 Diamonds" },
+  diamond_leggings: { koTitle: "다이아몬드 레깅스", enTitle: "Diamond Leggings", koDesc: "다이아몬드 7개", enDesc: "7 Diamonds" },
+  diamond_boots: { koTitle: "다이아몬드 부츠", enTitle: "Diamond Boots", koDesc: "다이아몬드 4개", enDesc: "4 Diamonds" },
+
   bow: { koTitle: "활", enTitle: "Bow", koDesc: "막대 + 실", enDesc: "Sticks + String" },
   arrow: { koTitle: "화살", enTitle: "Arrow", koDesc: "부싯돌 + 막대 + 깃털", enDesc: "Flint + Stick + Feather" },
   shield: { koTitle: "방패", enTitle: "Shield", koDesc: "철 + 판자", enDesc: "Iron Ingot + Planks" },
@@ -20,10 +49,18 @@ const itemData = {
   chest: { koTitle: "상자", enTitle: "Chest", koDesc: "판자 8개", enDesc: "8 Planks" },
   bed: { koTitle: "침대", enTitle: "Bed", koDesc: "양털 3 + 판자 3", enDesc: "3 Wool + 3 Planks" },
   bucket: { koTitle: "양동이", enTitle: "Bucket", koDesc: "철 3개", enDesc: "3 Iron Ingots" },
-  compass: { koTitle: "나침반", enTitle: "Compass", koDesc: "철 + 레드스톤", enDesc: "Iron Ingot + Redstone" },
-  clock: { koTitle: "시계", enTitle: "Clock", koDesc: "금 + 레드스톤", enDesc: "Gold Ingot + Redstone" },
-  book: { koTitle: "책", enTitle: "Book", koDesc: "종이 + 가죽", enDesc: "Paper + Leather" },
-  enchantment_table: { koTitle: "인챈트 테이블", enTitle: "Enchanting Table", koDesc: "다이아 + 책 + 옵시디언", enDesc: "Diamonds + Book + Obsidian" }
+  
+  flint_and_steel: { koTitle: "부싯돌과 부싯깃", enTitle: "Flint and Steel", koDesc: "철 + 부싯돌", enDesc: "Iron Ingot + Flint" },
+  shears: { koTitle: "가위", enTitle: "Shears", koDesc: "철 2개", enDesc: "2 Iron Ingots" },
+  fishing_rod: { koTitle: "낚싯대", enTitle: "Fishing Rod", koDesc: "막대 3 + 실 2", enDesc: "3 Sticks + 2 Strings" },
+  carrot_on_a_stick: { koTitle: "당근 낚싯대", enTitle: "Carrot on a Stick", koDesc: "낚싯대 + 낚인 당근", enDesc: "Fishing Rod + Carrot" },
+  warped_fungus_on_a_stick: { koTitle: "뒤틀린 균 낚싯대", enTitle: "Warped Fungus on a Stick", koDesc: "낚싯대 + 뒤틀린 균", enDesc: "Fishing Rod + Warped Fungus" },
+  lead: { koTitle: "끈", enTitle: "Lead", koDesc: "실 4 + 슬라임볼", enDesc: "4 Strings + Slimeball" },
+  name_tag: { koTitle: "이름표", enTitle: "Name Tag", koDesc: "종이 1 + 철사 줄", enDesc: "Paper + Iron Block/Ingots" },
+  golden_apple: { koTitle: "황금 사과", enTitle: "Golden Apple", koDesc: "사과 + 금괴 8개", enDesc: "Apple + 8 Gold Ingots" },
+  enchanted_golden_apple: { koTitle: "마법이 부여된 황금 사과", enTitle: "Enchanted Golden Apple", koDesc: "사과 + 금 블록 8개", enDesc: "Apple + 8 Gold Blocks" },
+  totem_of_undying: { koTitle: "불사의 토템", enTitle: "Totem of Undying", koDesc: "소환사 처치 시 획득", enDesc: "Drop from Evoker" },
+  elytra: { koTitle: "엘리트라", enTitle: "Elytra", koDesc: "엔더 도시에서 획득", enDesc: "Found in End Cities" }
 };
 
 const mobData = {
@@ -49,6 +86,7 @@ const mobData = {
 };
 
 let currentLang = 'ko';
+let itemLimit = 12; // 초기 노출 개수
 
 function setLanguage(lang) {
   currentLang = lang;
@@ -60,6 +98,7 @@ function setLanguage(lang) {
   
   document.getElementById('itemSearchInput').placeholder = document.getElementById('itemSearchInput').getAttribute('data-' + lang);
   document.getElementById('mobSearchInput').placeholder = document.getElementById('mobSearchInput').getAttribute('data-' + lang);
+  document.getElementById('loadMoreBtn').innerHTML = document.getElementById('loadMoreBtn').getAttribute('data-' + lang);
 
   renderItems();
   renderMobs();
@@ -89,11 +128,20 @@ function renderItems(){
   const container = document.getElementById("itemContainer");
   container.innerHTML = "";
 
+  let displayedCount = 0;
   for(let key in itemData){
     const cardTitle = currentLang === 'ko' ? itemData[key].koTitle : itemData[key].enTitle;
-    
     const searchText = document.getElementById('itemSearchInput').value.toLowerCase();
+    
+    // 검색어가 있을 땐 필터링만 수행
     if(searchText && !cardTitle.toLowerCase().includes(searchText)) {
+      continue;
+    }
+
+    displayedCount++;
+    
+    // 검색어가 없고 아이템 제한 수보다 많이 노출된 경우 숨기기
+    if (!searchText && displayedCount > itemLimit) {
       continue;
     }
 
@@ -103,6 +151,21 @@ function renderItems(){
     div.onclick = () => showItem(key);
     container.appendChild(div);
   }
+
+  // 더보기 버튼 활성화 여부 (검색어 없을 때만 노출)
+  const moreBtn = document.getElementById("loadMoreBtn");
+  const searchText = document.getElementById('itemSearchInput').value.toLowerCase();
+  
+  if (!searchText && displayedCount > itemLimit) {
+    moreBtn.style.display = "inline-block";
+  } else {
+    moreBtn.style.display = "none";
+  }
+}
+
+function loadMoreItems() {
+  itemLimit += 12; // 12개씩 추가로 보여주기
+  renderItems();
 }
 
 function renderMobs(){
@@ -111,8 +174,8 @@ function renderMobs(){
 
   for(let key in mobData){
     const cardTitle = currentLang === 'ko' ? mobData[key].koTitle : mobData[key].enTitle;
-    
     const searchText = document.getElementById('mobSearchInput').value.toLowerCase();
+    
     if(searchText && !cardTitle.toLowerCase().includes(searchText)) {
       continue;
     }
@@ -155,5 +218,6 @@ function closeModal(){
   document.getElementById("modal").style.display = "none";
 }
 
+// 초기 렌더링 실행
 renderItems();
 renderMobs();
