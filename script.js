@@ -86,7 +86,7 @@ const mobData = {
 };
 
 let currentLang = 'ko';
-let itemLimit = 12; // 초기 노출 개수
+let itemLimit = 12;
 
 function setLanguage(lang) {
   currentLang = lang;
@@ -133,14 +133,11 @@ function renderItems(){
     const cardTitle = currentLang === 'ko' ? itemData[key].koTitle : itemData[key].enTitle;
     const searchText = document.getElementById('itemSearchInput').value.toLowerCase();
     
-    // 검색어가 있을 땐 필터링만 수행
     if(searchText && !cardTitle.toLowerCase().includes(searchText)) {
       continue;
     }
 
     displayedCount++;
-    
-    // 검색어가 없고 아이템 제한 수보다 많이 노출된 경우 숨기기
     if (!searchText && displayedCount > itemLimit) {
       continue;
     }
@@ -152,7 +149,6 @@ function renderItems(){
     container.appendChild(div);
   }
 
-  // 더보기 버튼 활성화 여부 (검색어 없을 때만 노출)
   const moreBtn = document.getElementById("loadMoreBtn");
   const searchText = document.getElementById('itemSearchInput').value.toLowerCase();
   
@@ -164,7 +160,11 @@ function renderItems(){
 }
 
 function loadMoreItems() {
-  itemLimit += 12; // 12개씩 추가로 보여주기
+  itemLimit += 12;
+  renderItems();
+}
+
+function searchItems() {
   renderItems();
 }
 
@@ -186,10 +186,6 @@ function renderMobs(){
     div.onclick = () => showMob(key);
     container.appendChild(div);
   }
-}
-
-function searchItems() {
-  renderItems();
 }
 
 function searchMobs() {
@@ -218,6 +214,6 @@ function closeModal(){
   document.getElementById("modal").style.display = "none";
 }
 
-// 초기 렌더링 실행
+// 초기화 실행
 renderItems();
 renderMobs();

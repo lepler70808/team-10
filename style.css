@@ -130,7 +130,7 @@ nav a:hover {
 .big-section:nth-child(even) { background-color: #d7ccc8; }
 
 #hero {
-  background: #388e3c no-repeat center 35%;
+  background: #388e3c url('https://i.namu.wiki/i/yHmjz_wOtyDaE-tdut3HsB-mR7wyecbPk0Hpa4EinGeE2nb3zHVNWA2Fc06vl7e-UNrxEut7-IAHTZJ1eiATtBc62iTuwdoR7d05_WKEiibXTDIsHZeab7yc9jk8nbJH0LsdbLsYgGGmrxdgza7jYQ.webp') no-repeat center 20%;
   background-size: cover;
   color: white;
   padding: 180px 10% 150px;
